@@ -25,7 +25,7 @@
                        <!-- navbar header  -->
                        <div class="collapse navbar-collapse" id="collapse">
                             <ul class="nav navbar-nav">
-                                    <li class="active"><a href="#">Главная</a></li>
+                                    <li class="active"><a href="index.php">Главная</a></li>
                                     <li ><a href="#"></a></li>
                                     <li><a href="#"></a></li>
                                 </ul>
