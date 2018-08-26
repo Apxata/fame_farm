@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-08-25 01:31:00
+/* Smarty version 3.1.32, created on 2018-08-26 12:21:15
   from 'C:\xampp7\htdocs\fame_farm\tpls\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5b809534ec3036_92288311',
+  'unifunc' => 'content_5b827f1b573ea9_08910866',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6e4bdb55f08a6247fc0220dbd2f6ee4468c6d28e' => 
     array (
       0 => 'C:\\xampp7\\htdocs\\fame_farm\\tpls\\index.tpl',
-      1 => 1535153459,
+      1 => 1535278870,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b809534ec3036_92288311 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b827f1b573ea9_08910866 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="main">
     <div class="content container">
         <div class="row">
@@ -41,6 +41,9 @@ function content_5b809534ec3036_92288311 (Smarty_Internal_Template $_smarty_tpl)
             <th>id </th>
             <th>Фейм </th>
             <th>Время </th>
+            <th>Продолжительность, мин </th>
+            <th>Фейм за период </th>
+            <th>Фейм в час </th>
           </tr>
     <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['fames']->value, 'fame');
@@ -53,6 +56,12 @@ foreach ($_from as $_smarty_tpl->tpl_vars['fame']->value) {
       <td><?php echo $_smarty_tpl->tpl_vars['fame']->value['fame'];?>
 </td>
       <td><?php echo $_smarty_tpl->tpl_vars['fame']->value['fame_time'];?>
+</td>
+      <td><?php echo $_smarty_tpl->tpl_vars['fame']->value['timespent']/60;?>
+</td>
+      <td><?php echo $_smarty_tpl->tpl_vars['fame']->value['fame_get'];?>
+</td>
+      <td><?php echo $_smarty_tpl->tpl_vars['fame']->value['fame_per_hour'];?>
 </td>
       </tr>
     <?php

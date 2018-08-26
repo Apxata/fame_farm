@@ -18,12 +18,18 @@
             <th>id </th>
             <th>Фейм </th>
             <th>Время </th>
+            <th>Продолжительность, мин </th>
+            <th>Фейм за период </th>
+            <th>Фейм в час </th>
           </tr>
     {foreach $fames as $fame} 
       <tr>
       <td>{$fame.id}</td>
       <td>{$fame.fame}</td>
       <td>{$fame.fame_time}</td>
+      <td>{$fame.timespent/60}</td>
+      <td>{$fame.fame_get}</td>
+      <td>{$fame.fame_per_hour}</td>
       </tr>
     {/foreach}
         </table>
